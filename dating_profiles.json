@@ -1,0 +1,47 @@
+[
+    {
+        "user_id": "u_001",
+        "name": "Aarav Sharma",
+        "age": 28,
+        "gender": "male",
+        "interested_in": "female",
+        "location": "Hyderabad",
+        "bio": "Software architect who loves building AI agents and backend pipelines. Over the weekends, you can find me hiking local trails, playing strategic board games, or trying out artisan coffee shops. Looking for someone intellectually curious with a passion for deep conversations and outdoor adventures."
+    },
+    {
+        "user_id": "u_002",
+        "name": "Ananya Iyer",
+        "age": 26,
+        "gender": "female",
+        "interested_in": "male",
+        "location": "Bangalore",
+        "bio": "Data scientist by day, passionate classical dancer and plant collector by evening. I love reading sci-fi novels, exploring cozy indie cafes, and traveling to the mountains. Seeking an ambitious partner who values humor, emotional intelligence, and shared personal growth."
+    },
+    {
+        "user_id": "u_003",
+        "name": "Rohan Verma",
+        "age": 29,
+        "gender": "male",
+        "interested_in": "female",
+        "location": "Hyderabad",
+        "bio": "Product manager with a deep love for indie music, weekend motorcycle rides, and cooking complex Italian dinners. I'm health-conscious, hit the gym regularly, and enjoy spontaneous road trips. Looking for a warm, witty partner to share life's simple and adventurous moments."
+    },
+    {
+        "user_id": "u_004",
+        "name": "Priya Nair",
+        "age": 27,
+        "gender": "female",
+        "interested_in": "male",
+        "location": "Hyderabad",
+        "bio": "UX designer who thrives on creative expression, modern art galleries, and acoustic playlists. Big foodie who loves experimenting with global recipes and maintaining indoor house plants. Hoping to find someone kind, thoughtful, and ready for deep conversations over dinner."
+    },
+    {
+        "user_id": "u_005",
+        "name": "Kabir Mehta",
+        "age": 31,
+        "gender": "male",
+        "interested_in": "female",
+        "location": "Mumbai",
+        "bio": "Fintech entrepreneur obsessed with stock markets, fitness training, and playing competitive badminton. When I'm not working, I read history biographies or plan scuba diving trips. Seeking an energetic, independent partner who enjoys staying active and laughing often."
+    }
+]

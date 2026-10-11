@@ -1,0 +1,32 @@
+[
+  {
+    "id": "doc_1",
+    "text": "FastAPI is a modern, fast web framework for building APIs with Python based on standard type hints.",
+    "category": "Backend Development"
+  },
+  {
+    "id": "doc_2",
+    "text": "Retrieval-Augmented Generation (RAG) combines local vector search with LLMs to ground responses in factual documents.",
+    "category": "Generative AI"
+  },
+  {
+    "id": "doc_3",
+    "text": "Pandas and NumPy are essential Python libraries for data manipulation, cleaning, and mathematical operations.",
+    "category": "Data Science"
+  },
+  {
+    "id": "doc_4",
+    "text": "LangChain and LangGraph provide modular components and orchestration logic for multi-agent AI systems.",
+    "category": "Generative AI"
+  },
+  {
+    "id": "doc_5",
+    "text": "Database query tuning involves optimizing indexes, execution plans, and joins to accelerate PL/SQL and SQL performance.",
+    "category": "Databases"
+  },
+  {
+    "id": "doc_6",
+    "text": "Routine motorcycle chain cleaning, engine oil checks, and brake adjustments ensure long-term reliability and fuel efficiency.",
+    "category": "Maintenance"
+  }
+]

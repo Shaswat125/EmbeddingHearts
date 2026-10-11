@@ -71,65 +71,102 @@ def initialize_profile_database(db_path=DB_PATH, model_name=MODEL_NAME, collecti
     print(f"Successfully synchronized {total_profiles} profiles into collection '{collection_name}'.")
 
 
-def search_dating_matches(user_id: str, n_results: int = 2, collection_name: str = COLLECTION_NAME):
+def search_dating_matches(
+    user_id: str, 
+    n_results: int = 3, 
+    age_window: int = 15, 
+    min_age_override: int = None, 
+    max_age_override: int = None,
+    collection_name: str = COLLECTION_NAME,
+    db_path: str = DB_PATH,
+    model_name: str = MODEL_NAME
+):
     """
-    Performs semantic matching for a given user:
-    1. Fetches the user's bio and target preference criteria.
-    2. Applies hard metadata filtering (e.g., matching gender preference).
-    3. Runs vector similarity search on the remaining candidates.
+    Performs comprehensive hybrid search (vector similarity + composite metadata filters):
+    1. Fetches target user record to extract profile bio, age, and orientation.
+    2. Constructs strict hard filters for gender preference and age boundaries.
+    3. Executes vector similarity search on the filtered candidate subset.
     """
-    model = SentenceTransformer(MODEL_NAME, local_files_only=True)
-    client = chromadb.PersistentClient(path=DB_PATH)
-    collection = client.get_collection(name=collection_name)
+    print(f"Initializing embedding runtime and vector storage for query...")
+    model = SentenceTransformer(model_name, local_files_only=True)
+    client = chromadb.PersistentClient(path=db_path)
+    
+    try:
+        collection = client.get_collection(name=collection_name)
+    except Exception as e:
+        print(f"Error accessing collection '{collection_name}': {e}")
+        return
 
+    # 1. Fetch querying user metadata and text
     target_record = collection.get(ids=[user_id], include=["documents", "metadatas"])
     if not target_record["ids"]:
-        print(f"Error: User ID '{user_id}' not found.")
+        print(f"Error: User ID '{user_id}' not found in the vector database.")
         return
 
     target_bio = target_record["documents"][0]
     target_meta = target_record["metadatas"][0]
+    target_gender = target_meta["gender"]
     target_preference = target_meta["interested_in"]
+    target_age = target_meta["age"]
+
+    # 2. Determine age boundaries (use overrides if provided, otherwise compute dynamic window)
+    min_age = min_age_override if min_age_override is not None else max(18, target_age - age_window)
+    max_age = max_age_override if max_age_override is not None else target_age + age_window
 
     print(f"\n==================================================")
-    print(f"Finding matches for: {target_meta['name']} ({target_meta['gender']}, looking for {target_preference})")
-    print(f"Bio: '{target_bio}'")
+    print(f"Match Request: {target_meta['name']} ({target_age} yrs, {target_gender})")
+    print(f"Target Filters -> Looking for: {target_preference}, Age Range: {min_age}-{max_age}")
     print(f"==================================================")
 
-    # Format query using BGE instruction template
+    # 3. Format query using BGE instruction template
     query_instruction = f"Represent this query for searching relevant passages: {target_bio}"
     query_embedding = model.encode([query_instruction], normalize_embeddings=True).tolist()
 
-    # Query ChromaDB with vector + metadata filter (exclude self and match preference)
+    # 4. Construct composite metadata filter using ChromaDB operators ($and, $eq, $gte, $lte)
+    metadata_filter = {
+        "$and": [
+            {"gender": {"$eq": target_preference}},
+            {"age": {"$gte": min_age}},
+            {"age": {"$lte": max_age}}
+        ]
+    }
+
+    # 5. Query ChromaDB with vector embeddings and strict metadata constraints
+    # Request extra results to safely account for self-exclusion post-filtering
     results = collection.query(
         query_embeddings=query_embedding,
-        n_results=n_results + 1,  # Request extra to handle self-filtering
-        where={"gender": {"$eq": target_preference}}
+        n_results=n_results + 5,
+        where=metadata_filter
     )
 
     if not results or not results["ids"] or not results["ids"][0]:
-        print("No matching profiles found with current filters.")
+        print("No matching profiles found satisfying the specified age and gender criteria.")
         return
 
     match_count = 0
-    for i, (uid, doc, metadata, distance) in enumerate(
-        zip(
-            results["ids"][0],
-            results["documents"][0],
-            results["metadatas"][0],
-            results["distances"][0],
-        )
-    ):
-        # Skip if the result is the user themselves
+    ids = results["ids"][0]
+    documents = results["documents"][0]
+    metadatas = results["metadatas"][0]
+    distances = results["distances"][0]
+
+    for uid, doc, metadata, distance in zip(ids, documents, metadatas, distances):
+        # Exclude the querying user from their own recommendations
         if uid == user_id:
             continue
 
+        # Convert cosine distance to compatibility percentage score
         similarity_score = max(0.0, 1.0 - distance)
         match_count += 1
 
-        print(f"\nMatch [{match_count}] -> {metadata['name']} ({metadata['age']}, {metadata['location']})")
-        print(f"Similarity Score : {similarity_score:.4f} ({similarity_score * 100:.1f} compatibility)")
-        print(f"Bio              : {doc}")
+        print(f"\nMatch [{match_count}] -> {metadata['name']} ({metadata['age']} yrs, {metadata['location']})")
+        print(f"Compatibility Score : {similarity_score:.4f} ({similarity_score * 100:.1f}%)")
+        print(f"Candidate Bio       : {doc}")
+
+        if match_count >= n_results:
+            break
+
+    if match_count == 0:
+        print("No external matches found after filtering out self-profile.")
 
 
 if __name__ == "__main__":

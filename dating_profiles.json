@@ -43,5 +43,410 @@
         "interested_in": "female",
         "location": "Mumbai",
         "bio": "Fintech entrepreneur obsessed with stock markets, fitness training, and playing competitive badminton. When I'm not working, I read history biographies or plan scuba diving trips. Seeking an energetic, independent partner who enjoys staying active and laughing often."
+    },
+    {
+        "user_id": "u_006",
+        "name": "Sneha Reddy",
+        "age": 25,
+        "gender": "female",
+        "interested_in": "male",
+        "location": "Bangalore",
+        "bio": "Frontend engineer and digital illustrator. I spend my weekends sketching portraits, visiting pottery workshops, and hunting down the best momos in town. Looking for an easy-going partner who loves creative pursuits and has a great sense of humor."
+    },
+    {
+        "user_id": "u_007",
+        "name": "Vikram Malhotra",
+        "age": 30,
+        "gender": "male",
+        "interested_in": "female",
+        "location": "Delhi",
+        "bio": "Corporate lawyer with a secret obsession for stand-up comedy, vintage jazz records, and amateur photography. I enjoy long walks around heritage sites and trying out authentic street food. Seeking someone witty, articulate, and spontaneous."
+    },
+    {
+        "user_id": "u_008",
+        "name": "Meera Joshi",
+        "age": 28,
+        "gender": "female",
+        "interested_in": "male",
+        "location": "Pune",
+        "bio": "Clinical psychologist who loves mindful living, yoga retreats, and baking sourdough bread from scratch. Big animal lover and passionate reader. Looking for a compassionate partner with emotional depth and a positive outlook on life."
+    },
+    {
+        "user_id": "u_009",
+        "name": "Aditya Rao",
+        "age": 27,
+        "gender": "male",
+        "interested_in": "female",
+        "location": "Chennai",
+        "bio": "Mechanical engineer working in EV tech. Passionate about road cycling, camping under the stars, and collecting mechanical watches. Looking for an adventurous partner who enjoys road trips and outdoor exploration."
+    },
+    {
+        "user_id": "u_010",
+        "name": "Divya Kulkarni",
+        "age": 29,
+        "gender": "female",
+        "interested_in": "male",
+        "location": "Mumbai",
+        "bio": "Brand strategist and theater enthusiast. I love attending poetry slams, trying out new fusion restaurants, and binge-watching psychological thrillers. Seeking someone intelligent, ambitious, and fun to explore the city with."
+    },
+    {
+        "user_id": "u_011",
+        "name": "Karan Kapoor",
+        "age": 32,
+        "gender": "male",
+        "interested_in": "female",
+        "location": "Gurgaon",
+        "bio": "Investment banker who balances high-stress work with marathon training, golf, and playing the acoustic guitar. Looking for an ambitious, supportive partner who appreciates a mix of fitness goals and relaxed weekend movie marathons."
+    },
+    {
+        "user_id": "u_012",
+        "name": "Tanvi Chawla",
+        "age": 26,
+        "gender": "female",
+        "interested_in": "male",
+        "location": "Delhi",
+        "bio": "Content creator and travel vlogger. Always planning my next trip to the hills, reading poetry by the window, or experimenting with Thai cuisine. Seeking a partner in crime who loves spontaneous travel and good conversations."
+    },
+    {
+        "user_id": "u_013",
+        "name": "Siddharth Menon",
+        "age": 29,
+        "gender": "male",
+        "interested_in": "female",
+        "location": "Bangalore",
+        "bio": "Cloud DevOps engineer by profession and an amateur astronomer by passion. I love stargazing, camping trips, and building custom mechanical keyboards. Looking for a curious mind who appreciates science, nature, and quiet evenings."
+    },
+    {
+        "user_id": "u_014",
+        "name": "Pooja Das",
+        "age": 27,
+        "gender": "female",
+        "interested_in": "male",
+        "location": "Kolkata",
+        "bio": "Architect with a deep appreciation for heritage buildings, indie music festivals, and oil painting. I enjoy spending rainy afternoons with a cup of Darjeeling tea and a good book. Seeking an artistic and warm-hearted companion."
+    },
+    {
+        "user_id": "u_015",
+        "name": "Nikhil Deshmukh",
+        "age": 30,
+        "gender": "male",
+        "interested_in": "female",
+        "location": "Pune",
+        "bio": "Wildlife photographer and environmental consultant. Most weekends find me tracking birds in the Western Ghats or editing documentary shorts. Looking for an earth-conscious partner who loves nature and outdoor trails."
+    },
+    {
+        "user_id": "u_016",
+        "name": "Rhea Sen",
+        "age": 24,
+        "gender": "female",
+        "interested_in": "male",
+        "location": "Mumbai",
+        "bio": "Fashion journalist and podcast host. Obsessed with vintage thrift shopping, modern art, and trying out artisanal cocktail bars. Seeking someone dynamic, stylish, and full of life."
+    },
+    {
+        "user_id": "u_017",
+        "name": "Varun Batra",
+        "age": 28,
+        "gender": "male",
+        "interested_in": "female",
+        "location": "Hyderabad",
+        "bio": "Backend developer working on distributed systems and cloud infrastructure. Big fan of hiking, tactical board games, and discovering specialty coffee roasters around the city. Looking for someone who enjoys tech talks, outdoor adventures, and cozy cafes."
+    },
+    {
+        "user_id": "u_018",
+        "name": "Shreya Mukherjee",
+        "age": 27,
+        "gender": "female",
+        "interested_in": "male",
+        "location": "Bangalore",
+        "bio": "Machine learning researcher focusing on natural language processing. In my free time, I love reading sci-fi novels, tending to my indoor plant collection, and visiting quiet mountain cafes. Seeking an emotionally intelligent partner who loves deep intellectual discussions."
+    },
+    {
+        "user_id": "u_019",
+        "name": "Arjun Nambiar",
+        "age": 29,
+        "gender": "male",
+        "interested_in": "female",
+        "location": "Hyderabad",
+        "bio": "Tech product lead who loves weekend motorcycle rides, hitting the gym, and experimenting with Italian cooking and homemade pizza dough. Looking for a witty, health-conscious partner to share spontaneous road trips and great meals."
+    },
+    {
+        "user_id": "u_020",
+        "name": "Natasha Pillai",
+        "age": 26,
+        "gender": "female",
+        "interested_in": "male",
+        "location": "Hyderabad",
+        "bio": "Graphic designer and art director. Passionate about modern art galleries, acoustic music playlists, and maintaining an urban jungle of houseplants. Hoping to find a thoughtful, creative partner for gallery hopping and dinner dates."
+    },
+    {
+        "user_id": "u_021",
+        "name": "Samarth Kulkarni",
+        "age": 31,
+        "gender": "male",
+        "interested_in": "female",
+        "location": "Pune",
+        "bio": "Software engineer and fitness enthusiast. I spend my weekdays writing code and my weekends hiking hills, lifting weights at the gym, and exploring artisan coffee shops. Looking for an active partner who values fitness and outdoor exploration."
+    },
+    {
+        "user_id": "u_022",
+        "name": "Kriti Saxena",
+        "age": 28,
+        "gender": "female",
+        "interested_in": "male",
+        "location": "Delhi",
+        "bio": "Full-stack developer and avid reader of science fiction. I love building side projects, playing strategy board games, and traveling to the mountains. Seeking a curious, tech-savvy partner who enjoys deep conversations and hiking trips."
+    },
+    {
+        "user_id": "u_023",
+        "name": "Devansh Roy",
+        "age": 27,
+        "gender": "male",
+        "interested_in": "female",
+        "location": "Bangalore",
+        "bio": "Data engineer who loves analyzing data trends, trying out gourmet coffee spots, and cooking Italian food on weekends. Regular gym-goer and outdoor lover. Seeking a warm, intelligent partner who appreciates good food and fitness."
+    },
+    {
+        "user_id": "u_024",
+        "name": "Ananya Kulkarni",
+        "age": 25,
+        "gender": "female",
+        "interested_in": "male",
+        "location": "Mumbai",
+        "bio": "UI/UX researcher with a passion for psychology, indoor plant care, and reading sci-fi novels. I love visiting cozy indie cafes and experimenting with baking. Looking for someone grounded, creative, and emotionally mature."
+    },
+    {
+        "user_id": "u_025",
+        "name": "Rohan Hegde",
+        "age": 30,
+        "gender": "male",
+        "interested_in": "female",
+        "location": "Hyderabad",
+        "bio": "DevOps lead by profession and hiking enthusiast by heart. When not automating cloud deployments, I enjoy long weekend treks, board game nights, and trying out specialty coffee beans. Seeking an adventurous partner with a love for nature."
+    },
+    {
+        "user_id": "u_026",
+        "name": "Nisha Patil",
+        "age": 27,
+        "gender": "female",
+        "interested_in": "male",
+        "location": "Pune",
+        "bio": "Software developer who loves coding clean APIs, collecting indoor plants, and reading dystopian sci-fi. Big fan of weekend mountain getaways and acoustic music. Looking for a smart, easy-going partner who shares similar geeky interests."
+    },
+    {
+        "user_id": "u_027",
+        "name": "Aman Sengupta",
+        "age": 29,
+        "gender": "male",
+        "interested_in": "female",
+        "location": "Bangalore",
+        "bio": "AI researcher working on deep learning models. Outside of work, I love hitting the gym, playing badminton, and cooking fusion food. Seeking an ambitious and energetic partner who enjoys fitness and stimulating conversations."
+    },
+    {
+        "user_id": "u_028",
+        "name": "Swati Deshmukh",
+        "age": 26,
+        "gender": "female",
+        "interested_in": "male",
+        "location": "Hyderabad",
+        "bio": "Product designer with a soft spot for minimalist art, indoor gardening, and indie bookstores. Always up for visiting local coffee shops or hiking scenic trails. Seeking a kind, creative companion for meaningful conversations."
+    },
+    {
+        "user_id": "u_029",
+        "name": "Harshvardhan Rao",
+        "age": 31,
+        "gender": "male",
+        "interested_in": "female",
+        "location": "Mumbai",
+        "bio": "Tech founder who loves fitness training, weightlifting, and weekend motorcycle road trips. Passionate about cooking Italian dishes and exploring coffee houses. Looking for a witty, independent partner who enjoys an active lifestyle."
+    },
+    {
+        "user_id": "u_030",
+        "name": "Nikita Kulkarni",
+        "age": 28,
+        "gender": "female",
+        "interested_in": "male",
+        "location": "Delhi",
+        "bio": "Backend software engineer who loves solving complex algorithmic problems, reading sci-fi thrillers, and tending to balcony plants. Seeking a thoughtful, tech-minded partner who enjoys board games and quiet coffee dates."
+    },
+    {
+        "user_id": "u_031",
+        "name": "Raghav Singhal",
+        "age": 27,
+        "gender": "male",
+        "interested_in": "female",
+        "location": "Bangalore",
+        "bio": "Software consultant passionate about cloud architecture, mountain trekking, and strategy board games. I enjoy spending weekends exploring indie cafes and reading tech blogs. Seeking an intellectual and adventurous partner."
+    },
+    {
+        "user_id": "u_032",
+        "name": "Deepika Swaminathan",
+        "age": 29,
+        "gender": "female",
+        "interested_in": "male",
+        "location": "Chennai",
+        "bio": "Data analyst who loves uncovering patterns, reading science fiction, and propagating snake plants. Big foodie who enjoys cooking Italian meals and trying specialty coffee. Looking for a warm, witty partner with shared curiosity."
+    },
+    {
+        "user_id": "u_033",
+        "name": "Mayank Joshi",
+        "age": 30,
+        "gender": "male",
+        "interested_in": "female",
+        "location": "Hyderabad",
+        "bio": "Systems engineer with a passion for Linux internals, hiking national parks, and playing tabletop strategy games. Seeking an intelligent partner who appreciates outdoor treks and cozy coffee shop chats."
+    },
+    {
+        "user_id": "u_034",
+        "name": "Ritu Sharma",
+        "age": 26,
+        "gender": "female",
+        "interested_in": "male",
+        "location": "Pune",
+        "bio": "Software tester with a love for automated testing, indoor gardening, and sci-fi book series. I enjoy weekend hikes and baking healthy treats. Looking for an easy-going partner who shares a passion for tech and nature."
+    },
+    {
+        "user_id": "u_035",
+        "name": "Abhishek Sen",
+        "age": 28,
+        "gender": "male",
+        "interested_in": "female",
+        "location": "Kolkata",
+        "bio": "Python developer building web apps and microservices. Fitness enthusiast who hits the gym daily and loves weekend motorcycle rides. Seeking an energetic, health-conscious partner who loves good food and road trips."
+    },
+    {
+        "user_id": "u_036",
+        "name": "Priyanka Ghosh",
+        "age": 27,
+        "gender": "female",
+        "interested_in": "male",
+        "location": "Bangalore",
+        "bio": "Software engineer who enjoys writing Python code, reading sci-fi novels, and caring for indoor house plants. Big coffee lover and weekend hiker. Seeking a compatible partner for tech discussions and mountain trails."
+    },
+    {
+        "user_id": "u_037",
+        "name": "Tarun Kapoor",
+        "age": 29,
+        "gender": "male",
+        "interested_in": "female",
+        "location": "Delhi",
+        "bio": "Full-stack engineer obsessed with React and FastAPI. In my free time, I play strategy board games, visit local coffee roasters, and hike trails. Looking for someone intellectually curious and fond of outdoor adventures."
+    },
+    {
+        "user_id": "u_038",
+        "name": "Ananya K.",
+        "age": 26,
+        "gender": "female",
+        "interested_in": "male",
+        "location": "Hyderabad",
+        "bio": "Data scientist who builds predictive models and loves collecting indoor plants. Avid reader of science fiction and fan of cozy indie coffee shops. Seeking an ambitious partner who values deep conversations and personal growth."
+    },
+    {
+        "user_id": "u_039",
+        "name": "Sameer Rao",
+        "age": 31,
+        "gender": "male",
+        "interested_in": "female",
+        "location": "Mumbai",
+        "bio": "Engineering manager balancing team leadership with weightlifting at the gym, cooking Italian dinners, and motorcycle touring. Seeking a warm, witty partner to share life's adventures and relaxed weekends."
+    },
+    {
+        "user_id": "u_040",
+        "name": "Kavya Menon",
+        "age": 25,
+        "gender": "female",
+        "interested_in": "male",
+        "location": "Bangalore",
+        "bio": "UI designer and tech enthusiast who loves sketching digital art, visiting artisan cafes, and hiking on weekends. Looking for an easy-going, creative partner with a great sense of humor and love for the outdoors."
+    },
+    {
+        "user_id": "u_041",
+        "name": "Manish Tiwari",
+        "age": 28,
+        "gender": "male",
+        "interested_in": "female",
+        "location": "Pune",
+        "bio": "Cloud architect passionate about serverless systems, fitness training, and playing badminton. Big fan of weekend treks and specialty coffee. Looking for an active, intelligent partner who enjoys healthy living."
+    },
+    {
+        "user_id": "u_042",
+        "name": "Sneha Roy",
+        "age": 27,
+        "gender": "female",
+        "interested_in": "male",
+        "location": "Hyderabad",
+        "bio": "Software engineer who loves backend coding, tending to her indoor plant collection, and reading sci-fi epics. Seeking a thoughtful, tech-minded partner who enjoys board games and quiet coffee dates."
+    },
+    {
+        "user_id": "u_043",
+        "name": "Naveen Kumar",
+        "age": 30,
+        "gender": "male",
+        "interested_in": "female",
+        "location": "Chennai",
+        "bio": "Product designer with a passion for user empathy, hiking mountain trails, and cooking gourmet meals. Looking for an adventurous and creative partner who loves deep conversations and outdoor exploration."
+    },
+    {
+        "user_id": "u_044",
+        "name": "Aditi Verma",
+        "age": 26,
+        "gender": "female",
+        "interested_in": "male",
+        "location": "Delhi",
+        "bio": "Python developer and sci-fi geek. I enjoy building backend APIs, reading speculative fiction, and visiting cozy indie cafes. Seeking a smart, kind partner for board game nights and weekend getaways."
+    },
+    {
+        "user_id": "u_045",
+        "name": "Rahul Sharma",
+        "age": 29,
+        "gender": "male",
+        "interested_in": "female",
+        "location": "Bangalore",
+        "bio": "Backend engineer who loves Python, gym workouts, and weekend motorcycle trips. Big foodie who enjoys cooking Italian dinners. Seeking a witty, health-conscious partner to share fun adventures."
+    },
+    {
+        "user_id": "u_046",
+        "name": "Pooja Nair",
+        "age": 28,
+        "gender": "female",
+        "interested_in": "male",
+        "location": "Hyderabad",
+        "bio": "Data engineer who enjoys working with large datasets, collecting house plants, and reading sci-fi novels. Looking for an intellectually curious partner who enjoys hiking and exploring artisan coffee shops."
+    },
+    {
+        "user_id": "u_047",
+        "name": "Karan Malhotra",
+        "age": 31,
+        "gender": "male",
+        "interested_in": "female",
+        "location": "Mumbai",
+        "bio": "Tech lead passionate about scalable systems, fitness training, badminton, and cooking. Seeking an energetic, independent partner who enjoys active living and good conversations."
+    },
+    {
+        "user_id": "u_048",
+        "name": "Meera Iyer",
+        "age": 27,
+        "gender": "female",
+        "interested_in": "male",
+        "location": "Pune",
+        "bio": "Software QA engineer who loves automation, indoor gardening, and reading sci-fi thrillers. Big fan of weekend mountain hikes and cozy coffee shops. Looking for a compatible partner for tech talks and outdoor trails."
+    },
+    {
+        "user_id": "u_049",
+        "name": "Abhinav Gupta",
+        "age": 28,
+        "gender": "male",
+        "interested_in": "female",
+        "location": "Hyderabad",
+        "bio": "AI developer building RAG pipelines and intelligent agents. Over the weekends, I enjoy hiking local trails, playing board games, and hunting for great coffee. Seeking an intellectually curious partner with a passion for deep talks."
+    },
+    {
+        "user_id": "u_050",
+        "name": "Ananya Sen",
+        "age": 26,
+        "gender": "female",
+        "interested_in": "male",
+        "location": "Bangalore",
+        "bio": "Data scientist who loves machine learning, propagating houseplants, and reading sci-fi. Seeking an ambitious partner who values humor, emotional intelligence, and shared personal growth over coffee."
     }
 ]

@@ -7,3 +7,4 @@ vector_db/
 venv/
 .vscode/
 pycache/
+dating_vector_db/
